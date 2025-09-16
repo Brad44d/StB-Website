@@ -9,7 +9,7 @@
 <body>
 
     <header class="header">
-		<h1>Steuerberatung Schmiedeberg</h1>
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
 		<div id="navigation"></div>
 	</header>
 	
@@ -18,18 +18,18 @@
 		<h1 style="margin: 0;">Impressum</h1>
 	</section>
 
-    <!-- Impressumsinhalt (Platzhalter) -->
-    <main style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+    <!-- Impressumsinhalt -->
+	<main class="compliance">
         <p>
 			<strong>Angaben gemäß § 5 TMG | DL-InfoV</strong><br><br>
 
-			<b>Susan von Schmiedeberg</b><br>
-			Flinspachstr. 11<br>
-			83607 Holzkirchen<br><br>
+			<b><span data-var="name"></span></b><br>
+			<span data-var="street"></span><br>
+			<span data-var="city"></span><br><br>
 
 			<b>Kontakt</b><br>
-			Telefon: +49 176 96439609<br>
-			E-Mail: StBSchmiedeberg@outlook.de<br>
+			Telefon: <span data-var="phone"></span><br>
+			E-Mail: <span data-var="email"></span><br>
 			Website: www.steuerberatung-schmiedeberg.de<br><br>
 
 			<b>Aufsichtsbehörde / Zuständige Kammer:</b><br>
@@ -81,7 +81,8 @@
     </main>
 
 	<div id="footer"></div>
-
+	
+	<script src="variables.js"></script>
 	<script src="include.js"></script>
     <script>
         loadHTML("navigation", "navigation.html");

@@ -9,7 +9,7 @@
 <body>
 
     <header class="header">
-		<h1>Steuerberatung Schmiedeberg</h1>
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
 		<div id="navigation"></div>
 	</header>
 	
@@ -17,7 +17,7 @@
 		<!-- Hero-Bereich -->
 		<section class="hero" class="hero">
 			<h2>Ihre Steuerberatung mit persönlicher Note</h2>
-			<p style="font-size: 1.2rem; margin-bottom: 1rem;">Steuerberaterin <strong>Susan von Schmiedeberg</strong></p>
+			<p style="font-size: 1.2rem; margin-bottom: 1rem;">Steuerberaterin <strong><span data-var="name"></span></strong></p>
 			<p>Individuelle Lösungen für Privatpersonen, Selbstständige und kleine Unternehmen.</p>
 			<a href="#contact" class="button" style="margin-top: 1.0rem; display: inline-block;">Kontakt aufnehmen</a>
 		</section>
@@ -56,14 +56,14 @@
 		<section style="background-color: white; padding: 2rem; text-align: center;">
 			<h2>Standort</h2>
 			<div style="max-width: 600px; margin: 0 auto;">
-				<p style="font-size: 1.2rem; margin-bottom: 1rem;">📍 <strong>Flinspachstr. 11, 83607 Holzkirchen</strong></p>
+				<p style="font-size: 1.2rem; margin-bottom: 1rem;">📍 <strong><span data-var="address"></span></strong></p>
 				<p style="margin-bottom: 1rem;">⏰ Termine vor Ort nach Vereinbarung</p>
 			</div>
 		</section>
 	</main>
 	
 	<div id="footer"></div>
-
+	<script src="variables.js"></script>
 	<script src="include.js"></script>
     <script>
         loadHTML("navigation", "navigation.html");

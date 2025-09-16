@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
+		<div id="navigation"></div>
+	</header>
+	
+	<!-- Datenschutzerklärung -->
+	<section class="hero" style="padding: 3rem 1rem; margin-bottom: 2rem;">
+		<h1 style="margin: 0;">Datenschutzerklärung</h1>
+	</section>
+
+    <!-- Datenschutzerklärungsinhalt -->
+	<main class="compliance">
+	
+	  <section>
+		<h2>Verantwortlicher</h2>
+		<p>
+		  <span data-var="name"></span><br>
+		  <span data-var="address"></span><br>
+		  <span data-var="phone"></span><br>
+		  <span data-var="email"></span>
+		</p>
+	  </section>
+
+	  <section>
+		<h2>1. Allgemeines</h2>
+		<p>Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Ich verarbeite Ihre Daten ausschließlich im Rahmen der gesetzlichen Bestimmungen (insbesondere DSGVO und BDSG).</p>
+	  </section>
+
+	  <section>
+		<h2>2. Bereitstellung der Website</h2>
+		<p>Beim Aufruf dieser Website werden durch den Webserver (bereitgestellt von Netlify) automatisch bestimmte Informationen verarbeitet, die technisch erforderlich sind, um die Website anzuzeigen. Dazu können insbesondere gehören:</p>
+		<ul>
+		  <li>IP-Adresse</li>
+		  <li>Datum und Uhrzeit der Anfrage</li>
+		  <li>angefragte Seite / Datei</li>
+		  <li>Browsertyp und -version</li>
+		  <li>Betriebssystem</li>
+		</ul>
+		<p>Diese Daten werden von Netlify in Server-Logfiles gespeichert. Eine Zusammenführung mit anderen Datenquellen erfolgt nicht. Die Speicherung dient ausschließlich der technischen Bereitstellung und der Sicherheit der Website.</p>
+	  </section>
+
+	  <section>
+		<h2>3. Cookies und Tracking</h2>
+		<p>Auf dieser Website werden <strong>keine Cookies</strong> gesetzt und es findet <strong>kein Tracking</strong> (z. B. Google Analytics) statt.</p>
+	  </section>
+
+	  <section>
+		<h2>4. Eingesetzte Schriftarten</h2>
+		<p>Es werden ausschließlich systemeigene Schriftarten (Arial, sans-serif) genutzt. Es erfolgt <strong>kein Nachladen externer Webfonts</strong> (z. B. von Google Fonts).</p>
+	  </section>
+
+	  <section>
+		<h2>5. Kontaktaufnahme</h2>
+		<p>Eine Kontaktaufnahme ist per E-Mail über einen bereitgestellten <code>mailto:</code>-Link möglich.
+		  Die dabei übermittelten personenbezogenen Daten (z. B. Ihre E-Mail-Adresse, Name, Inhalt der Nachricht)
+		  werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet. Eine Weitergabe an Dritte erfolgt nicht.</p>
+	  </section>
+
+	  <section>
+		<h2>6. Speicherung und Löschung</h2>
+		<p>Personenbezogene Daten werden nur so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage oder zur Erfüllung gesetzlicher Aufbewahrungspflichten erforderlich ist. Danach werden sie gelöscht.</p>
+	  </section>
+
+	  <section>
+		<h2>7. Ihre Rechte</h2>
+		<p>Sie haben das Recht auf:</p>
+		<ul>
+		  <li>Auskunft über die verarbeiteten personenbezogenen Daten,</li>
+		  <li>Berichtigung unrichtiger Daten,</li>
+		  <li>Löschung Ihrer Daten,</li>
+		  <li>Einschränkung der Verarbeitung,</li>
+		  <li>Widerspruch gegen die Verarbeitung,</li>
+		  <li>Datenübertragbarkeit.</li>
+		</ul>
+		<p>
+		  Zudem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.
+		</p>
+	  </section>
+
+	  <section>
+		<h2>8. Änderungen dieser Datenschutzerklärung</h2>
+		<p>Ich behalte mir vor, diese Datenschutzerklärung künftig anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p>
+	  </section>
+	</main>
+
+	<div id="footer"></div>
+	
+	<script src="variables.js"></script>
+	<script src="include.js"></script>
+    <script>
+        loadHTML("navigation", "navigation.html");
+        loadHTML("footer", "footer.html");
+    </script>
+</body>
+</html>

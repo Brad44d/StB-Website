@@ -9,7 +9,7 @@
 <body>
 
     <header class="header">
-		<h1>Steuerberatung Schmiedeberg</h1>
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
 		<div id="navigation"></div>
 	</header>
 	
@@ -17,7 +17,7 @@
 	<section class="hero">
 	  <h2>Über mich</h2>
 	  <p style="font-size: 1.2rem; margin-bottom: 1rem;">
-		Steuerberaterin <strong>Susan von Schmiedeberg</strong>
+		Steuerberaterin <strong><span data-var="name"></span></strong>
 	  </p>
 	  <p>
 		Ein kurzer Einblick in meine Erfahrung und Spezialisierungen.
@@ -71,7 +71,8 @@
 	</main>
 
 	<div id="footer"></div>
-
+	
+	<script src="variables.js"></script>
 	<script src="include.js"></script>
     <script>
         loadHTML("navigation", "navigation.html");
