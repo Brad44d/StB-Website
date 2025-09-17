@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Steuerberatung Schmiedeberg</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
+		<div id="navigation"></div>
+	</header>
+	
+	<!-- Hero-Bereich -->
+	<section class="hero">
+	  <h2>Kontakt</h2>
+	  <p style="font-size: 1.2rem; margin-bottom: 1rem;">
+		Kontaktieren Sie mich gerne jederzeit über <strong>Telefon</strong> und <strong>E-Mail</strong>.</p>
+		<div style="display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem;">
+		<a href="tel:+49 176 96439609" style="font-size: 3rem; text-decoration: none;">📞</a>
+		<a href="mailto:StBSchmiedeberg@outlook.de" style="font-size: 3rem; text-decoration: none;">✉️</a>
+		</div>
+	</section>
+	
+	<main>
+	
+		<section class="gray content">
+			<div>
+			  <h2>Erreichbarkeit</h2>
+			  <p>In der Regel bin ich während der üblichen Geschäftszeiten von Montag bis Freitag, 09:00–17:00 Uhr, erreichbar.</p>
+			  <p>Falls Sie mich einmal nicht direkt erreichen, hinterlassen Sie mir gerne eine Nachricht auf der Mailbox oder schreiben Sie mir eine E-Mail.</p>
+			</div>
+			
+			<div>
+			  <h2>Antwortzeit</h2>
+			  <p>Auf eingehende E-Mails antworte ich zuverlässig innerhalb von 1–2 Werktagen.</p>
+			</div>
+		</section>
+		
+		<!-- Standort -->
+		<section style="background-color: white; padding: 2rem; text-align: center;">
+			<h2>Standort</h2>
+			<div style="max-width: 600px; margin: 0 auto;">
+				<p style="font-size: 1.2rem; margin-bottom: 1rem;">📍 <strong><span data-var="address"></span></strong></p>
+				<p style="margin-bottom: 1rem;">⏰ Termine vor Ort nach Vereinbarung</p>
+			</div>
+		</section>
+
+	</main>
+
+	<div id="footer"></div>
+	
+	<script src="variables.js"></script>
+	<script src="include.js"></script>
+    <script>
+		loadHTML("navigation", "partials/navigation.html");
+		loadHTML("footer", "partials/footer.html");
+    </script>
+</body>
+</html>
