@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden - 404</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+		<h1>Steuerberatung <span data-var="surname"></span></h1>
+		<div id="navigation"></div>
+	</header>
+	
+	<main class="container">
+		<!-- Hero-Bereich -->
+		<section class="hero" class="hero">
+			<h2>Not Found, Error 404</h2>
+			<p style="font-size: 1.2rem; margin-bottom: 1rem;">Steuerberaterin <strong><span data-var="name"></span></strong></p>
+			<p>The page you are looking for does not exist.</p>
+			<a href="#contact" class="button" style="margin-top: 1.0rem; display: inline-block;">Kontakt aufnehmen</a>
+		</section>
+	</main>
+	
+	<div id="footer"></div>
+	<script src="variables.js"></script>
+	<script src="include.js"></script>
+    <script>
+		loadHTML("navigation", "partials/navigation.html");
+		loadHTML("footer", "partials/footer.html");
+    </script>
+</body>
+</html>
