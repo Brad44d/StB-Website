@@ -11,7 +11,7 @@ body {
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .hero {
-	background-color: #6BA3C8; /* Hauptfarbe */
+	background-color: #6BA3C8;
 	color: white;
 	padding: 4rem 1rem;
 	text-align: center;
@@ -32,11 +32,17 @@ section.content {
 }
 section.gray {
   background-color: #F8F8F8;
-  max-width: 100% !important; /* überschreibt content-Beschränkung */
+  max-width: 100% !important;
 }
-
+.contact-icon {
+transition: transform 0.3s ease; /* Sanfte Animation */
+display: inline-block; /* Wichtig für Transformationen */
+}
+.contact-icon:hover {
+transform: scale(1.2); /* 20% größer */
+}
 .button {
-	background-color: #2A4D69; /* Akzentfarbe */
+	background-color: #2A4D69;
 	color: white;
 	padding: 0.5rem 1rem;
 	border: none;
@@ -46,12 +52,26 @@ section.gray {
 	display: inline-block;
 }
 .services {
-	padding: 2rem;
-	text-align: center;
+  padding: 2rem;
+  text-align: center;
 }
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.services-container > div {
+  flex: 1 1 450px;
+  max-width: 450px;
+  text-align: center;
+}
+
 .service-icon {
-	font-size: 2rem;
-	margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .footer {
 	background-color: #2A4D69;
@@ -59,10 +79,12 @@ section.gray {
 	padding: 1rem;
 	text-align: center;
 }
-.footer a[href^="mailto:"] {
+.footer a[href^="mailto:"],
+.footer a[href^="tel:"] {
     color: #73dbdf;
     text-decoration: none;
 }
-.footer a[href^="mailto:"]:hover {
+.footer a[href^="mailto:"]:hover,
+.footer a[href^="tel:"]:hover {
     color: #adf1f3;
 }
