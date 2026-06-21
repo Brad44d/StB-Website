@@ -10,6 +10,26 @@ body {
 	padding: 1rem;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+nav a {
+	color: #2A4D69;
+	text-decoration: none;
+	padding: 0.4rem 0.8rem;
+	border-radius: 4px;
+	transition: background-color 0.2s, color 0.2s;
+}
+nav a:hover {
+	background-color: rgba(107, 163, 200, 0.15);
+}
+nav a.active {
+	background-color: #2A4D69;
+	color: white;
+}
 .hero {
 	background-color: #6BA3C8;
 	color: white;
@@ -50,6 +70,11 @@ transform: scale(1.2); /* 20% größer */
 	cursor: pointer;
 	text-decoration: none;
 	display: inline-block;
+	transition: background-color 0.2s, transform 0.2s;
+}
+.button:hover {
+	background-color: #6BA3C8;
+	transform: translateY(-2px);
 }
 .services {
   padding: 2rem;
@@ -67,6 +92,14 @@ transform: scale(1.2); /* 20% größer */
   flex: 1 1 450px;
   max-width: 450px;
   text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.services-container > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .service-icon {
